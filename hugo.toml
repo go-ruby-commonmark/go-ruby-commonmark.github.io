@@ -11,6 +11,11 @@ disableKinds = ["taxonomy", "term", "RSS", "sitemap", "404"]
   blurb = "`commonmark` builds with `CGO_ENABLED=0` — it cross-compiles to every Go target with no C toolchain and links into a single static binary."
 
 [[params.phases]]
+  name = "CommonMark spec-complete"
+  status = "ready"
+  blurb = "Passes **all 652 / 652** examples of the [CommonMark spec v0.31.2](https://spec.commonmark.org/0.31.2/) conformance suite, **byte-exact** — 100%, 0 known gaps. Every spec example is embedded and run on every CI lane, and a ratchet test fails on any regression, so full conformance can only be held."
+
+[[params.phases]]
   name = "Reference-faithful"
   status = "ready"
   blurb = "Mirrors the observable behaviour of Ruby's `commonmark` from reference Ruby (MRI), validated by a differential oracle against the reference rather than approximated — **without any Ruby runtime**."
