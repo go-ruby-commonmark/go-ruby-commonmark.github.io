@@ -1,0 +1,5 @@
+module github.com/go-ruby-commonmark/go-ruby-commonmark.github.io
+
+go 1.27.3
+
+require github.com/go-fleettools/landingkit v0.7.1
